@@ -42,7 +42,8 @@ async function main() {
       // this is the response from gpt
       console.log(colors.green('Bot: ') + completionText);
 
-      // update history with user input and assistant response
+      // update history with user input & assistant rsp
+
       chatHistory.push(['user', userInput]);
       chatHistory.push(['assistant', completionText]);
     } catch (error) {
